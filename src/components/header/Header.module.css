@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  grid-area: head;
+  background-color: #daf1ff;
+  background-color: #55595d;
+}
+.logo_box {
+  margin-right: 10px;
+}
+.logo, .logo_box {
+  max-width: 100%;
+  height: auto;
+}
+.heading {
+  font-size: calc(1rem + 0.4vmin);
+  color: #f1f2f4;
+  text-decoration: none;
+}

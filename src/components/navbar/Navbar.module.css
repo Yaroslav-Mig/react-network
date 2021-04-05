@@ -1,0 +1,45 @@
+.container {
+  grid-area: nav;
+  box-sizing: border-box;
+  background-color: #66cdaa;
+  color: #3f3f3f;
+}
+.box_background {
+  width: 100%;
+}
+.background {
+  max-width: 100%;
+  height: auto;
+}
+.box_avatar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.avatar {
+  position: absolute;
+  top: -50%;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  box-shadow: 0px 0px 0px 3px #a0a0a0;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.user_name {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2vmin;
+}
+.box_link {
+}
+.link_item {
+  color: #f0ffff;
+  text-decoration: none;
+}
