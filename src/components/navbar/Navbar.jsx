@@ -1,15 +1,16 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import { images } from '../../assets/images';
+import navBackground from '../../assets/user_photo/desert.jpg';
+import userAvatar from '../../assets/user_avatar/user-male.png';
 
 export function Navbar() {
 	return (
 		<aside className={styles.container}>
 			<div className={styles.box_background}>
-				<img className={styles.background} src={`${images.navBackground}`} alt="user background" />
+				<img className={styles.background} src={navBackground} alt="user background" />
 			</div>
 			<figure className={styles.box_avatar}>
-				<img className={styles.avatar} src={`${images.userAvatar}`} alt="user avatar" />
+				<img className={styles.avatar} src={userAvatar} alt="user avatar" />
 				<figcaption className={styles.user_name}>User Name</figcaption>
 			</figure>
 			<nav>
