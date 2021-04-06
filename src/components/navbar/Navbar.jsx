@@ -13,8 +13,8 @@ export function Navbar() {
 				<img className={styles.avatar} src={userAvatar} alt="user avatar" />
 				<figcaption className={styles.user_name}>User Name</figcaption>
 			</figure>
-			<nav>
-				<h2>My profile</h2>
+			<nav className={styles.nav_box}>
+				<h2 className={styles.nav_heading}>My profile</h2>
 				<ul className={styles.box_link}>
 					<li>
 						<a className={styles.link_item} href="#">Profile</a>
