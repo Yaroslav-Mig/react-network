@@ -35,26 +35,34 @@ export function MainPage() {
           </article>
         </div>
       </section>
-      <section>
-        <h2>My posts</h2>
-        <form id='new-post' action='#' method='get' enctype='text/plain'>
-          <textarea form='new-post' rows='3' cols='10'></textarea>
-          <button form='new-post' type='submit'>
+      <section className={styles.box_post}>
+        <h2 className={styles.post_heading}>My posts</h2>
+        <form className={styles.post_form} id='new-post' action='#' method='get' enctype='text/plain'>
+          <textarea className={styles.post_field} form='new-post' rows='5'></textarea>
+          <button className={styles.post_submit} form='new-post' type='submit'>
             Send
           </button>
         </form>
-        <article>
-          <h3>user name</h3>
-          <aside>
-            <img src='#' alt='avatar' />
-          </aside>
-          <p>I agree, Germany is my favorite country.</p>
-          <footer>
-            <p>
-              Posted on<time datetime='1914-12-20 08:00'> May 17</time>
-            </p>
-          </footer>
-        </article>
+        <div className={styles.post_wall}>
+          <article className={styles.post_module}>
+            <header className={styles.post_header}>
+              <a className={styles.post_avatar_inner} href='#'>
+                <img className={styles.post_avatar} src={userAvatar} alt='user avatar' />
+              </a>
+              <div className={styles.post_info}>
+                <h3 className={styles.post_author}>
+                  <a href='#'>User name</a>
+                </h3>
+                <p className={styles.post_date}>
+                  posted on <time datetime='1914-12-20 08:00'>May 17</time>
+                </p>
+              </div>
+            </header>
+            <div className={styles.post_content}>
+              <p className={styles.post_text}>I agree, Germany is my favorite country.</p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
   );

@@ -6,7 +6,15 @@
 .profile_inner,
 .wrapper_img,
 .profile_heading,
-.profile_module {
+.profile_module,
+.box_post,
+.post_form,
+.post_field,
+.post_module,
+.post_wall,
+.post_header,
+.post_avatar_inner,
+.post_content {
   width: 100%;
   box-sizing: border-box;
 }
@@ -22,8 +30,8 @@
   font-size: calc(1rem + 1vmin);
   color: #f1f1f1;
   text-align: center;
-  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5,
-    0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  text-shadow: 1px 1px 0 #4074b5, 1px -1px 0 #4074b5, -1px 1px 0 #4074b5, -1px -1px 0 #4074b5, 1px 0px 0 #4074b5,
+    0px 1px 0 #4074b5, -1px 0px 0 #4074b5, 0px -1px 0 #4074b5;
 }
 .wrapper_img {
   position: relative;
@@ -60,7 +68,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   flex: 1 1 auto;
-  padding: 10px;
+  padding: 5px 10px;
 }
 .profile_item {
   font-size: calc(0.7rem + 0.5vmin);
@@ -68,4 +76,78 @@
 }
 .profile_item span {
   padding-left: 10px;
+}
+
+.box_post {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+}
+.post_heading {
+  font-size: calc(0.9rem + 1vmin);
+  line-height: calc(1.5em + 1vw);
+  color: #3f3f3f;
+}
+.post_form {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
+}
+.post_field {
+  width: calc(50% + 25vmin);
+  font-size: calc(0.5rem + 1vmin);
+  resize: none;
+}
+.post_submit {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.post_wall {
+}
+.post_module {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(60px, auto) 1fr;
+  row-gap: 10px;
+  padding: 10px 15px;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+.post_header {
+  display: flex;
+  align-items: center;
+}
+.post_avatar_inner {
+  width: 40px;
+  height: 40px;
+}
+.post_avatar {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 1px #a0a0a0;
+}
+.post_info {
+  padding: 0 15px;
+}
+.post_author {
+	font-size: calc(0.5rem + 1vmin);
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.post_author > a {
+  color: #4074b5;
+  text-decoration: none;
+}
+.post_date {
+  font-size: calc(0.5rem + 0.5vmin);
+  line-height: 1.2rem;
+}
+.post_content {
+}
+.post_text {
+  font-size: calc(0.5rem + 1vmin);
+  line-height: calc(1rem + 0.5vmin);
 }
