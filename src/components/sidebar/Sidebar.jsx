@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Navbar.module.css';
+import styles from './Sidebar.module.css';
 import navBackground from '../../assets/user_photo/desert.jpg';
 import userAvatar from '../../assets/user_avatar/user-male.png';
 
-export function Navbar() {
+export function Sidebar() {
   return (
     <aside className={styles.container}>
       <div className={styles.box_background}>
