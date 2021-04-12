@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/header/Header';
 import { Sidebar } from './components/sidebar/Sidebar.jsx';
-import { MainPage } from './components/main/MainPage';
+import { User } from './components/user/User';
 
 function App() {
   return (
     <div className='wrapper'>
       <Header />
       <Sidebar />
-      <MainPage />
+      <User />
     </div>
   );
 }

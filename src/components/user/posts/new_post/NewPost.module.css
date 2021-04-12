@@ -1,0 +1,24 @@
+.form,
+.field {
+  width: 100%;
+  box-sizing: border-box;
+}
+.heading {
+  font-size: calc(0.9rem + 1vmin);
+  line-height: calc(1.5em + 1vw);
+  color: #3f3f3f;
+}
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 20px;
+}
+.field {
+  width: calc(50% + 25vmin);
+  font-size: calc(0.5rem + 1vmin);
+  resize: none;
+}
+.submit {
+  align-self: flex-start;
+  cursor: pointer;
+}

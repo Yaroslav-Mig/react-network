@@ -1,0 +1,40 @@
+.box,
+.heading,
+.inner,
+.wrapper_img {
+  width: 100%;
+  box-sizing: border-box;
+}
+.box,
+.inner {
+  position: relative;
+}
+.heading {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  line-height: calc(1em + 0.5vw);
+  font-size: calc(1rem + 1vmin);
+  color: #f1f1f1;
+  text-align: center;
+  text-shadow: 1px 1px 0 #4074b5, 1px -1px 0 #4074b5, -1px 1px 0 #4074b5, -1px -1px 0 #4074b5, 1px 0px 0 #4074b5,
+    0px 1px 0 #4074b5, -1px 0px 0 #4074b5, 0px -1px 0 #4074b5;
+}
+.wrapper_img {
+  position: relative;
+  padding-top: 30%;
+  height: 0;
+  overflow: hidden;
+}
+.background {
+  max-width: 100%;
+  height: auto;
+}
+.centered {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+}

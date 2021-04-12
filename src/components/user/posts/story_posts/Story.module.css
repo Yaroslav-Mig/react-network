@@ -1,0 +1,53 @@
+.module,
+.wall,
+.header,
+.avatar_inner,
+.content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.module {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(60px, auto) 1fr;
+  row-gap: 10px;
+  padding: 10px 15px;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.avatar_inner {
+  width: 40px;
+  height: 40px;
+}
+.avatar {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 1px #a0a0a0;
+}
+.info {
+  padding: 0 15px;
+}
+.author {
+  font-size: calc(0.5rem + 1vmin);
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.author > a {
+  color: #4074b5;
+  text-decoration: none;
+}
+.date {
+  font-size: calc(0.5rem + 0.5vmin);
+  line-height: 1.2rem;
+}
+.text {
+  font-size: calc(0.5rem + 1vmin);
+  line-height: calc(1rem + 0.5vmin);
+}

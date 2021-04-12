@@ -1,0 +1,28 @@
+.module {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+}
+.photo {
+  max-width: 15vw;
+  height: auto;
+  object-fit: cover;
+}
+.info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  padding: 5px 10px;
+}
+.item {
+  font-size: calc(0.7rem + 0.5vmin);
+  color: #f1f1f1;
+}
+.item span {
+  padding-left: 10px;
+}
