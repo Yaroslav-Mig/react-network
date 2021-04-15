@@ -6,15 +6,18 @@
   width: 100%;
   box-sizing: border-box;
 }
-
 .module {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(60px, auto) 1fr;
   row-gap: 10px;
   padding: 10px 15px;
+  margin: 20px 0;
   background-color: #fafafa;
   border-radius: 5px;
+}
+.module:last-child {
+  margin-bottom: 0;
 }
 .header {
   display: flex;
