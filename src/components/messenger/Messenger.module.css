@@ -1,0 +1,64 @@
+.container,
+.header,
+.form,
+.box,
+.module,
+.content {
+  width: 100%;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 2px solid #aaabae;
+}
+.heading {
+  font-size: calc(0.9rem + 1vmin);
+  line-height: calc(1.5em + 1vw);
+  color: #3f3f3f;
+}
+.btn_message {
+  align-self: center;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  padding: 20px;
+}
+.field_search {
+  flex: 2 1 auto;
+}
+.btn_search {
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.box {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.module {
+  display: flex;
+  padding: 10px;
+	margin: 7.5px 0;
+  background-color: #f1f2f4;
+  border-radius: 5px;
+}
+.module:first-child {
+  margin-top: 0;
+}
+.module:last-child {
+  margin-bottom: 0;
+}
+.content {
+  flex: 1 1 50%;
+  padding: 0 10px;
+}
+.text_preview {
+}
+.date {
+  align-self: center;
+}
