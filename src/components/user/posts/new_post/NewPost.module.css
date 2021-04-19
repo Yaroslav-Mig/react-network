@@ -1,17 +1,8 @@
-.form,
-.field {
-  width: 100%;
-  box-sizing: border-box;
-}
-.heading {
-  font-size: calc(0.9rem + 1vmin);
-  line-height: calc(1.5em + 1vw);
-  color: #3f3f3f;
-}
 .form {
   display: flex;
   flex-flow: column wrap;
   margin-bottom: 20px;
+	width: 50%;
 }
 .field {
   width: calc(50% + 25vmin);

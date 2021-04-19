@@ -1,0 +1,42 @@
+.box_sizing {
+  width: 100%;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px 20px;
+}
+.heading_m {
+  font-size: calc(0.9rem + 1vmin);
+  line-height: calc(1.5em + 1vw);
+  color: #3f3f3f;
+}
+.avatar_inner {
+  width: 40px;
+  height: 40px;
+}
+.avatar {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 1px #a0a0a0;
+}
+.userName {
+  font-size: calc(0.5rem + 1vmin);
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.userName_link {
+  color: #4074b5;
+  text-decoration: none;
+}
+.date {
+  font-size: calc(0.5rem + 0.5vmin);
+  line-height: 1.2rem;
+}
+.text {
+  font-size: calc(0.5rem + 1vmin);
+  line-height: calc(1rem + 0.5vmin);
+}

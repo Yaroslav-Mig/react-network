@@ -5,12 +5,12 @@ import userAvatar from '../../../assets/user_avatar/user-male.png';
 
 export function MessengerDialogs() {
   return (
-    <ul className={styles.box}>
-      <li className={styles.module}>
+    <ul className={globalStyles.box}>
+      <li className={`${styles.module} ${globalStyles.box_sizing}`}>
         <a className={globalStyles.avatar_inner} href='#'>
           <img className={globalStyles.avatar} src={userAvatar} alt='user avatar' />
         </a>
-        <div className={styles.content}>
+        <div className={`${globalStyles.box_sizing} ${styles.content}`}>
           <h3 className={globalStyles.userName}>
             <a className={globalStyles.userName_link} href='#'>
               User name
