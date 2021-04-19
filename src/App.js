@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/header/Header';
 import { Messenger } from './components/messenger/Messenger';
-import { Sidebar } from './components/sidebar/Sidebar.jsx';
+import { Sidebar } from './components/sidebar/Sidebar';
 import { User } from './components/user/User';
 
 function App() {
