@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './NavList.module.css';
 
 export function SidebarNavList() {
@@ -7,44 +8,44 @@ export function SidebarNavList() {
       <h2 className={styles.heading}>My profile</h2>
       <ul className={styles.box_link}>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/profile'>
             Profile
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/about'>
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/news'>
             News
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/messenger'>
             Messenger
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/friends'>
             Friends
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/groups'>
             Communities
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/photos'>
             Photos
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.item_link} href='#'>
+          <Link className={styles.item_link} to='/settings'>
             Settings
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
