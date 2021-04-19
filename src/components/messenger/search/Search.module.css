@@ -1,0 +1,15 @@
+.form {
+  width: 100%;
+  box-sizing: border-box;
+}
+.form {
+  display: flex;
+  padding: 20px;
+}
+.field_search {
+  flex: 2 1 auto;
+}
+.btn_search {
+  flex: 0 0 auto;
+  cursor: pointer;
+}

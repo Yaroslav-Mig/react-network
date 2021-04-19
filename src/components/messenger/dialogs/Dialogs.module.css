@@ -1,0 +1,33 @@
+.box,
+.module,
+.content {
+  width: 100%;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.module {
+  display: flex;
+  padding: 10px;
+  margin: 7.5px 0;
+  background-color: #f1f2f4;
+  border-radius: 5px;
+}
+.module:first-child {
+  margin-top: 0;
+}
+.module:last-child {
+  margin-bottom: 0;
+}
+.content {
+  flex: 1 1 50%;
+  padding: 0 10px;
+}
+.date {
+  align-self: center;
+}
