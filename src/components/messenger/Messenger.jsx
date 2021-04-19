@@ -5,7 +5,7 @@ import userAvatar from '../../assets/user_avatar/user-male.png';
 
 export function Messenger() {
   return (
-    <main className={`${'main-container'}`}>
+    <React.Fragment>
       <header className={styles.header}>
         <h2 className={globalStyles.heading_m}>Messages</h2>
         <button className={styles.btn_message} type='button'>
@@ -34,8 +34,8 @@ export function Messenger() {
           <time className={`${globalStyles.date} ${styles.date}`} datetime='1914-12-20 08:00'>
             April 6
           </time>
-				</li>
-				<li className={styles.module}>
+        </li>
+        <li className={styles.module}>
           <a className={globalStyles.avatar_inner} href='#'>
             <img className={globalStyles.avatar} src={userAvatar} alt='user avatar' />
           </a>
@@ -52,6 +52,6 @@ export function Messenger() {
           </time>
         </li>
       </ul>
-    </main>
+    </React.Fragment>
   );
 }
