@@ -18,7 +18,7 @@ export function SidebarNavList() {
           </Link>
         </li>
         <li>
-          <Link className={styles.item_link} to='/news'>
+          <Link className={styles.item_link} to='/feed'>
             News
           </Link>
         </li>
