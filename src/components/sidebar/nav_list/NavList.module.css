@@ -40,7 +40,6 @@
   height: 6px;
   border-radius: 50%;
   background: #f58262;
-  transition: all 0.2s ease-in-out;
 }
 .active_link::before {
   left: -10px;
