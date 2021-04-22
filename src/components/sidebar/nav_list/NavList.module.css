@@ -23,7 +23,6 @@
   line-height: calc(0.8rem + 0.5vmin);
   color: #f0ffff;
   text-decoration: none;
-  vertical-align: middle;
   transition: text-shadow 0.3s ease-in-out;
 }
 .active_link,
