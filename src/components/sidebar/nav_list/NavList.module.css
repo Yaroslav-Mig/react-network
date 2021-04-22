@@ -6,7 +6,7 @@
 .heading {
   line-height: 2rem;
   height: 2rem;
-  font-size: calc(0.7rem + 0.5vmin);
+  font-size: calc(0.8rem + 0.5vmin);
   text-transform: uppercase;
 }
 .box_link {
@@ -18,7 +18,34 @@
   gap: 5px;
 }
 .item_link {
-  font-size: calc(0.7rem + 0.5vmin);
+  position: relative;
+  font-size: calc(0.8rem + 0.5vmin);
+  line-height: calc(0.8rem + 0.5vmin);
   color: #f0ffff;
   text-decoration: none;
+  vertical-align: middle;
+  transition: text-shadow 0.3s ease-in-out;
+}
+.active_link,
+.item_link:hover {
+  text-shadow: 1px 1px 0 #adadad, 1px -1px 0 #adadad, -1px 1px 0 #adadad, -1px -1px 0 #adadad, 1px 0px 0 #adadad,
+    0px 1px 0 #adadad, -1px 0px 0 #adadad, 0px -1px 0 #adadad;
+  transition: text-shadow 0.3s ease-in-out;
+}
+.active_link::before,
+.active_link::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f58262;
+  transition: all 0.2s ease-in-out;
+}
+.active_link::before {
+  left: -10px;
+}
+.active_link::after {
+  right: -10px;
 }
