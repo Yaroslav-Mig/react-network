@@ -4,19 +4,28 @@ import pageBackground from '../../../assets/user_photo/desert.jpg';
 import { UserProfileContent } from './content/Content';
 
 export function UserProfile() {
+  const userInfo = {
+    firstName: 'Jack',
+    lastName: 'Sparrow',
+    birthday: 1689,
+    gender: 'male',
+    familyStatus: 'single',
+    city: 'Kingston',
+  };
   return (
     <section className={styles.box}>
-      <UserProfileTitle />
+      <UserProfileTitle userInfo={userInfo} />
       <div className={styles.inner}>
         <UserProfileBackground />
-        <UserProfileContent />
+        <UserProfileContent userInfo={userInfo} />
       </div>
     </section>
   );
 }
 
-function UserProfileTitle() {
-  return <h2 className={styles.heading}>User Name</h2>;
+function UserProfileTitle(props) {
+  const { firstName, lastName } = props.userInfo;
+  return <h2 className={styles.heading}>{`${firstName} ${lastName}`}</h2>;
 }
 
 function UserProfileBackground() {
