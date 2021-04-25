@@ -35,8 +35,10 @@
 .date {
   font-size: calc(0.5rem + 0.5vmin);
   line-height: 1.2rem;
+  color: #a0a0a0;
 }
 .text {
   font-size: calc(0.5rem + 1vmin);
   line-height: calc(1rem + 0.5vmin);
+  color: #3f3f3f;
 }

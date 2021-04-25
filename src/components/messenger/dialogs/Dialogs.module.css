@@ -1,9 +1,12 @@
 .module {
-  display: flex;
-  padding: 10px;
   margin: 7.5px 0;
+  padding: 10px;
   background-color: #f1f2f4;
   border-radius: 5px;
+}
+.module_inner {
+  display: flex;
+  text-decoration: none;
 }
 .module:first-child {
   margin-top: 0;
@@ -17,4 +20,5 @@
 }
 .date {
   align-self: center;
+  text-decoration: none;
 }
