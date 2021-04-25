@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/header/Header';
 import { Sidebar } from './components/sidebar/Sidebar';
@@ -27,6 +27,7 @@ function App() {
           <Route path='/groups' component={Groups} />
           <Route path='/photos' component={Photos} />
           <Route path='/settings' component={Settings} />
+          <Redirect exact from='/' to='/profile' />
         </main>
       </div>
     </BrowserRouter>
