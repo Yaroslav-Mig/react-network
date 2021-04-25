@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './UserProfile.module.css';
+import styles from './Profile.module.css';
 import pageBackground from '../../../assets/user_photo/desert.jpg';
-import { UserProfileContent } from './content/UserProfileContent';
+import { UserProfileContent } from './content/Content';
 
 export function UserProfile() {
   return (

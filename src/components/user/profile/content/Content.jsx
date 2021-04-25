@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './UserProfileContent.module.css';
+import styles from './Content.module.css';
 import userAvatar from '../../../../assets/user_avatar/user-male.png';
 
 export function UserProfileContent() {
