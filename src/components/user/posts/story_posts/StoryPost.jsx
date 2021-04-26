@@ -4,9 +4,9 @@ import globalStyles from '../../../../styles/Global.module.css';
 import userAvatar from '../../../../assets/user_avatar/user-male.png';
 
 export function UserStoryPost(props) {
-  const { postText, postDate, userName } = props;
+  const { id, userName, postText, postDate, postLikes } = props;
   return (
-    <article className={`${globalStyles.box_sizing} ${styles.module}`}>
+    <article id={id} className={`${globalStyles.box_sizing} ${styles.module}`}>
       <header className={`${globalStyles.box_sizing} ${styles.header}`}>
         <a className={globalStyles.avatar_inner} href='#'>
           <img className={globalStyles.avatar} src={userAvatar} alt='user avatar' />
@@ -25,6 +25,9 @@ export function UserStoryPost(props) {
       <div className={globalStyles.box_sizing}>
         <p className={globalStyles.text}>{postText}</p>
       </div>
+      <p>
+        Likes<span> - {postLikes}</span>
+      </p>
     </article>
   );
 }
