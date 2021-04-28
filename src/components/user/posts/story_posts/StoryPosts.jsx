@@ -9,7 +9,7 @@ export function UserStoryPosts() {
   ];
   const postsElements = postsData.map((post) => (
     <UserStoryPost
-      id={post.id}
+      key={post.id}
       userName={post.userName}
       postText={post.text}
       postDate={post.date}

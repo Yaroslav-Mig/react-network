@@ -11,7 +11,7 @@ export function UserNewPost() {
         id='new-post'
         action='#'
         method='get'
-        enctype='text/plain'
+        encType='text/plain'
       >
         <textarea className={styles.field} form='new-post' rows='5'></textarea>
         <button className={styles.submit} form='new-post' type='submit'>

@@ -5,8 +5,8 @@ import userAvatar from '../../../assets/user_avatar/user-male.png';
 import { Link } from 'react-router-dom';
 
 export function MessengerDialog(props) {
-  const { userName, idPath, date, textPreview } = props;
-  const path = `/messenger/${idPath}`;
+  const { userName, key, date, textPreview } = props;
+  const path = `/messenger/${key}`;
   return (
     <>
       <li className={`${styles.module} ${globalStyles.box_sizing}`}>
