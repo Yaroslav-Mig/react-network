@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Search.module.css';
-import globalStyles from '../../../styles/Global.module.css';
 
 export function MessengerSearch() {
   return (
